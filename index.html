@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Database Directory</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 30px 20px;
+    }
+
+    .page-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #bb86fc;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #9e9e9e;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .instruction {
+      background-color: #1e1e1e;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .instruction p {
+      margin: 4px 0;
+      color: #ccc;
+    }
+
+    h2 {
+      color: #bb86fc;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 16px;
+      cursor: pointer;
+    }
+
+    .card.highlighted {
+      border-color: #03dac6;
+      background-color: #222c2a;
+    }
+
+    .card h3 {
+      margin: 0 0 8px 0;
+      color: #03dac6;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      margin: 4px 0;
+      color: #b0b0b0;
+      font-size: 0.95rem;
+    }
+
+    .card p strong {
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <h1>Enterprise Database Directory</h1>
+    <p class="subtitle">Product, Customer & Office Directory</p>
+
+    <div class="instruction">
+      <p>Browse the products, customers, and offices below.</p>
+      <p>Click any card to highlight it.</p>
+    </div>
+
+    <section>
+      <h2>Products</h2>
+      <div id="products-container" class="card-container"></div>
+    </section>
+
+    <section>
+      <h2>Customers</h2>
+      <div id="customers-container" class="card-container"></div>
+    </section>
+
+    <section>
+      <h2>Offices</h2>
+      <div id="offices-container" class="card-container"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
